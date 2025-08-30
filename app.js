@@ -1,4 +1,4 @@
-const apiKey = "1074c2345a114f2e9bbe3428d13e8094";
+const apiKey = "d56799b4cbf445a1a3c0ccb99b4199a1";
 const baseUrl = `https://newsapi.org/v2`;
 
 const newsContainer = document.getElementById("news-container");
@@ -39,7 +39,7 @@ async function fetchNews(category = "") {
         if (e.target.classList.contains("read-more")) return;
 
         localStorage.setItem("selectedArticle", JSON.stringify(article));
-        
+
         window.open("news-detail.html", "_blank");
       });
       newsContainer.appendChild(card);

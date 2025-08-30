@@ -12,6 +12,7 @@ body.dark-theme {
   --header-footer-bg: #1a1a1a; /* Dark header/footer */
 }
 
+
 body {
   min-height: 100vh;
   display: flex;
@@ -23,12 +24,7 @@ body {
   color: var(--text-color);
 }
 
-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
 
 header,
 footer {
@@ -36,46 +32,21 @@ footer {
   padding: 1rem;
   text-align: center;
 }
+.header_container {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
 
 footer p {
   margin: 0;
 }
 
-.main-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
-  
-}
-
-#news-heading {
-  font-weight: 600;
-  margin: 16px 0 20px 0;
-  text-align: left;
-}
-
-#details-news-heading {
-  width: 100%;
-  max-width: 800px;
-  font-weight: 600;
-  margin: 40px auto 20px auto;
-  text-align: left;
-}
-
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 16px;
-}
-
-
-.card {
-  background: var(--card-bg);
-  padding: 16px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
 
 button {
   cursor: pointer;
@@ -88,9 +59,6 @@ button {
 header {
   background: var(--header-footer-bg);
   padding: 12px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -149,6 +117,50 @@ header {
 #themeToggle:hover {
   transform: scale(1.1);
 }
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  
+}
+
+#news-heading {
+  font-weight: 600;
+  margin: 16px 0 20px 0;
+  text-align: left;
+}
+
+#details-news-heading {
+  width: 100%;
+  max-width: 800px;
+  font-weight: 600;
+  margin: 40px auto 20px auto;
+  text-align: left;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+
+.card {
+  background: var(--card-bg);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 
 .card img {
   max-width: 100%;
